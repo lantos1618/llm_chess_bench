@@ -29,7 +29,9 @@
 				"golang.go",
 				"ms-azuretools.vscode-docker",
 				"eamodio.gitlens",
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"ms-python.python",
+				"saoudrizwan.claude-dev"
 			],
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
