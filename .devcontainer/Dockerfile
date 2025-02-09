@@ -16,6 +16,20 @@ RUN apt-get update && apt-get install -y \
     zsh \
     && rm -rf /var/lib/apt/lists/*
 
+
+# Install bun
+RUN curl -fsSL https://bun.sh/install | bash
+
+# register bun to bash
+RUN echo 'export PATH="$HOME/.bun/bin:$PATH"' >> ~/.bashrc
+
+# Install node
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+
+# Add NVM to shell and install Node LTS
+ENV NVM_DIR=/root/.nvm
+RUN . "$NVM_DIR/nvm.sh" && nvm install --lts
+
 # Create workspace directory
 RUN mkdir -p /workspaces
 

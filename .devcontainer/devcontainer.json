@@ -31,7 +31,6 @@
 				"eamodio.gitlens",
 				"streetsidesoftware.code-spell-checker",
 				"ms-python.python",
-				"saoudrizwan.claude-dev"
 			],
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
